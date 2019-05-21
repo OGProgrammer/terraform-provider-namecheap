@@ -36,8 +36,8 @@ $ wget -O ~/.terraform.d/plugins/terraform-provider-namecheap https://github.com
 
 ```bash
 $ mkdir -p ~/.terraform.d/plugins/
-$ curl https://github.com/adamdecaf/terraform-provider-namecheap/releases/download/1.2.0/terraform-provider-namecheap-osx-amd64 > ~/.terraform.d/plugins/terraform-provider-namecheap
-$ chmod +x ~/.terraform.d/plugins/terraform-provider-namecheap
+$ curl https://github.com/adamdecaf/terraform-provider-namecheap/releases/download/1.2.0/terraform-provider-namecheap-osx-amd64 -L --output ~/.terraform.d/plugins/terraform-provider-namecheap
+$ chmod +x ~/.terraform.d/plugins/terraform-provider-namecheap 
 ```
 
 Then inside a Terraform file within your project (Ex. `providers.tf`):
